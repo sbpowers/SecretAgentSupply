@@ -5,7 +5,7 @@ html {
 
 body {
   font-family: Helvetica;
-  line-height: 1.4em;
+  line-height: 1.4rem;
 }
 
 h1,
@@ -18,7 +18,6 @@ h4 {
   margin: 0 auto;
 }
 
-
 .company-header {
   background-color: black;
   color: white;
@@ -27,12 +26,12 @@ h4 {
 .company-header .container-960 {
   display: flex;
   align-items: center;
-  padding: 12px 0 12px 0.5em;
+  padding: 12px 0 12px 0.5rem;
 }
 
 .company-header img {
   padding-right: 15px;
-  height: 1.5em;
+  height: 1.5rem;
 }
 
 
@@ -41,10 +40,10 @@ h4 {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 25em;
+  height: 25rem;
 }
 
-.banner-line {
+.banner-line { /* "rem" spacing doesn't work. "position:relative" issue? */
   position: relative;
   padding: 2em 3em;
   width: 20em;
@@ -60,28 +59,19 @@ h4 {
 }
 
 
-
-/*
-.banner-line h4 {
-  margin-left: 3rem;
-  font-size: 1rem;
-  font-weight: bold;
-  text-align: left;
-}
-*/
-/*
-.shopping-menu {
-  display: inline-flex;
-  flex-direction: row;
-  justify-content:space-between;
-  align-items: center;
-  width: 100%;
-  height: 2.5rem;
-  margin: auto;
+nav {
   background-color: firebrick;
-  border: 1px solid white;
+  color: white;
 }
 
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  padding: 0.75rem 0;
+
+}
+/*
 .dept span {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
