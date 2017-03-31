@@ -111,11 +111,10 @@ nav ul {
   height: 5rem;
   background-color: yellow;
 }
-
-footer {
-  border: 1px solid white;
-  width: 100%;
-  height: 5rem;
-  background-color: green;
-}
 */
+footer {
+  margin-top: 4rem;
+  padding: 5rem;
+  background-color: black;
+  color: white;
+}
