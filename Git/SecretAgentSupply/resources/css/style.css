@@ -1,0 +1,175 @@
+html {
+  font-size: 18px;
+  background-color: white;
+}
+
+body {
+  font-family: Helvetica;
+  line-height: 1.4rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+h1,
+h4 {
+  font-weight: bold;
+}
+
+.container-960 {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.company-header {
+  background-color: black;
+  color: white;
+}
+
+.company-header .container-960 {
+  display: flex;
+  align-items: center;
+  padding: 12px 0 12px 0.5rem;
+}
+
+.company-header img {
+  padding-right: 15px;
+  height: 1.5rem;
+}
+
+
+.motorcycle-splash {
+  background-image: url("../images/moto.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 25rem;
+}
+
+.banner-line { /* "rem" spacing doesn't work. "position:relative" issue? */
+  position: relative;
+  padding: 2em 3em;
+  width: 20em;
+  top: 9em;
+  background-color: black;
+  color: white;
+}
+
+.banner-line h1 {
+  font-size: 2em;
+  line-height: 1.2em;
+  margin: 0.25em 0;
+}
+
+
+nav {
+  background-color: firebrick;
+  color: white;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  padding: 0.75rem 0;
+}
+
+.tablet-display {
+  display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  nav ul {
+    display: none;
+  }
+
+  .tablet-display {
+    display: block;
+    text-align: center;
+  }
+}
+
+.merch {
+  width: 30%;
+}
+
+.merch-img {
+  border: 4px solid black;
+  padding: 2rem 0;
+  height: 9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.merch-img img {
+  max-width: 8rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  .merch {
+    width: 47%;
+  }
+
+  .merch.glasses {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .store,
+  .business-info {
+    flex-wrap: wrap;
+  }
+
+  .merch {
+    width: 90%;
+    margin: auto;
+  }
+
+  .merch.watch {
+    display: none;
+  }
+
+  .info {
+    width: 90%;
+    margin: 0.5em auto;
+  }
+}
+
+.description {
+  display: block;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.info {
+  width: 35%
+}
+
+.store,
+.loc-hrs-block {
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem 0 0 0;
+}
+
+
+.info .title {
+  display: block;
+  background-color: black;
+  color: white;
+  padding: 1rem 2rem;
+}
+
+footer {
+  margin-top: 4rem;
+  padding: 5rem;
+  background-color: black;
+  color: white;
+}
